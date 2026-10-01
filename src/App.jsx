@@ -1,9 +1,15 @@
-function App () {
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+
+const App = () => {
   return (
-  <div>
-    <h1>Hello Vite + React!</h1>
-  </div>
+    <div>
+      <Header />
+      <Main />
+      <Footer />
+    </div>
   )
-}
+};
 
 export default App;
