@@ -1,10 +1,12 @@
-import WelcomeMessage from "./components/WelcomeMessage";
-
 const App = () => {
   return (
-    <div>
-      <WelcomeMessage />
-    </div>
+    <section id="section"> 
+      <form>
+        <label htmlFor="name">Name: </label>
+        <input type="text" placeholder="Enter your name" />
+      </form>
+    </section>
+    
   );
 };
 
