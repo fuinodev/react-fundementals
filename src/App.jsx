@@ -1,9 +1,13 @@
-import ArrayPractice from "./components/ArrayPractice";
+import UserList from "./components/UserList";
+
 const App = () => {
   return (
-   <main>
-    <ArrayPractice />
-   </main>
+    <div>
+      <ul>
+        <UserList />
+      </ul>
+    </div>
+
   );
 };
 
