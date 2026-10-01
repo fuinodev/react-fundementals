@@ -1,15 +1,11 @@
-  const App = () => {
-    return ( <section id="section">
-    <h1>My website</h1>
+import WelcomeMessage from "./components/WelcomeMessage";
 
-  <article>
-    <h2>Welcome to React</h2>
-    <p classname="text">Paragraph Content</p>
-    
-  </article>
-    </section>
-    
-    );
-  };
+const App = () => {
+  return (
+    <div>
+      <WelcomeMessage />
+    </div>
+  );
+};
 
-  export default App
+export default App;
