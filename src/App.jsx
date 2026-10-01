@@ -1,15 +1,15 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+  const App = () => {
+    return ( <section id="section">
+    <h1>My website</h1>
 
-const App = () => {
-  return (
-    <div>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  )
-};
+  <article>
+    <h2>Welcome to React</h2>
+    <p classname="text">Paragraph Content</p>
+    
+  </article>
+    </section>
+    
+    );
+  };
 
-export default App;
+  export default App
