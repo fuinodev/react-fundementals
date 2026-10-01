@@ -4,9 +4,9 @@ const ArrayPractice = () => {
     const numbers = [1,2,3,4,5,6,7];
 
     const userInfo = [
-        {id: 1, name: "Fuino", age: 19, locaton: "pilipins"},
-        {id: 2, name: "Wesui", age: 19, locaton: "pilipins"},
-        {id: 3, name: "Xynons", age: 19, locaton: "pilipins"},
+        {id: 1, name: "Fuino", age: 19, location: "pilipins"},
+        {id: 2, name: "Wesui", age: 19, location: "pilipins"},
+        {id: 3, name: "Xynons", age: 19, location: "pilipins"},
 
     ]
     return (
@@ -28,11 +28,11 @@ const ArrayPractice = () => {
 
         <h1>User Information: </h1>
         <ul>
-            {userInfo.map((user) => (
+          {userInfo.map((user) => (
             <li key={user.id}>
-                    <p>User: {user.name}</p>
-                    <p>Age: {user.age}</p>
-                    <p>Location: {user.location}</p>
+            <li>{user.name}</li>
+            <li>{user.age}</li>
+            <li>{user.location}</li>
                 </li>
             ))}
         </ul>
