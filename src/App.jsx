@@ -1,14 +1,10 @@
-import Greeting from "./components/Greeting";
-import ProductInfo from "./components/ProductInfo";
-
+import ArrayPractice from "./components/ArrayPractice";
 const App = () => {
   return (
-    <div>
-   <Greeting />
-   <ProductInfo />
-   </div>
-
+   <main>
+    <ArrayPractice />
+   </main>
   );
 };
 
-export default App
+export default App;
