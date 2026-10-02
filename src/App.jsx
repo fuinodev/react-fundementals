@@ -1,13 +1,21 @@
-import Person from "./components/Person";
-import Product from "./components/Product";
+const ValidPassword = () => <h1>Your password is Valid</h1>
+const InvalidPassword = () => <h1>Your password is Invalid</h1>
+
+const Passwword = ({ isValid}) => {
+  if (isValid) {
+    return <ValidPassword />
+
+  } else;
+
+  return <InvalidPassword />
+};
 
 const App = () => {
   return (
     <div>
-      <Person name="FuinoDev " age={19} />
-       <Product name="iPhone" price="$1500" />
+     <h1><Passwword isValid={true}/> </h1>
     </div>
-  );    
+  );
 };
 
 export default App;
