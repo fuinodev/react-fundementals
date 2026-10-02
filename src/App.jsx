@@ -1,23 +1,16 @@
-const ValidPassword = () => <h1>Your password is Valid</h1>
-const InvalidPassword = () => <h1>Your password is Invalid</h1>
-
-const Passwword = ({ isValid}) => {
- // if (isValid) {
-  //  return <ValidPassword />
-
-//  } else;
-
-  //return <InvalidPassword />
-
-  return isValid ? <ValidPassword /> : <InvalidPassword />
-
-};
+import Weather from "./components/Weather";
+import UserStatus from "./components/UserStatus"; 
+import Greetings from "./components/Greetings";
 
 const App = () => {
-  return (
-    <div>
-     <h1><Passwword isValid={true}/> </h1>
-    </div>
+  return(
+    <>
+   <Weather />
+
+   <UserStatus loggedIn={true} isAdmin={true} />
+
+   <Greetings timeOfday="ads"/>
+     </>
   );
 };
 
