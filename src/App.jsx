@@ -1,8 +1,9 @@
-import ToDoList from "./components/ToDoList"
+import Profile from "./components/Profile.jsx";
+
 const App = () => {
   return (
     <div>
-      <ToDoList />
+      <Profile />
     </div>
   );
 };
