@@ -1,15 +1,31 @@
 import { useState } from "react";
-import ComponentOne from "./components/ComponentOne";
-import ComponentTwo from "./components/ComponentTwo";
 
 const App = () => {
-  const [count, setCount] = useState(0);
+  const [name, setName] = useState(
+    localStorage.getItem("name") || ""
+  );
+
+  const saveName = () => {
+    localStorage.setItem("name", name);
+  };
 
   return (
     <div>
-      <ComponentOne count={count} onClickHandler={() => setCount(count + 1)} />
-      <ComponentTwo count={count} onClickHandler={() => setCount(count - 1)} />
-  </div>
+      <h1>Your Name</h1>
+
+      <input
+        type="text"
+        placeholder="Enter your name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+
+      <button onClick={saveName}>
+        Save
+      </button>
+
+      <p>Hello, {name}</p>
+    </div>
   );
 };
 
