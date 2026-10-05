@@ -1,9 +1,9 @@
-import Profile from "./components/Profile.jsx";
+import ShoppingList from "./components/ShoppingList.jsx";
 
 const App = () => {
   return (
     <div>
-      <Profile />
+      <ShoppingList />
     </div>
   );
 };
