@@ -22,15 +22,14 @@ const ToDoList = () => {
   return (
     <div>
         <h1>ToDo List hahah umay</h1>
-    <form onSumbit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
         <input type="text" value={inputValue} onChange={handleChange} placeholder="Input ka nga ng task umay"/>
-        <button type="sumbit">haha input ka ng task luds</button>
+        <button type="submit">haha input ka ng task luds</button>
     </form>
 
     <ul>
         {todos.map((todo, index) => (
-
-     <li key="index">{todo}</li>
+     <li key={index}>{todo}</li>
 
        ))}
 
