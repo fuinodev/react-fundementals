@@ -1,16 +1,15 @@
-import Weather from "./components/Weather";
-import UserStatus from "./components/UserStatus"; 
-import Greetings from "./components/Greetings";
+import { useState } from "react";
+import ComponentOne from "./components/ComponentOne";
+import ComponentTwo from "./components/ComponentTwo";
 
 const App = () => {
-  return(
-    <>
-   <Weather />
+  const [count, setCount] = useState(0);
 
-   <UserStatus loggedIn={true} isAdmin={true} />
-
-   <Greetings timeOfday="ads"/>
-     </>
+  return (
+    <div>
+      <ComponentOne count={count} onClickHandler={() => setCount(count + 1)} />
+      <ComponentTwo count={count} onClickHandler={() => setCount(count - 1)} />
+  </div>
   );
 };
 
