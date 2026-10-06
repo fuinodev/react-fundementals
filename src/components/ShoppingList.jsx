@@ -45,7 +45,8 @@ const ShoppingList = () => {
         <button onClick={addItem}>Add Item</button>
 
     
-      <ul> Your Product List:
+      <ul> 
+        <h2>Your Product List: </h2>
          {items.map((item, index) => (
            <li key={index}>
         {item.name} - Quantity: {item.quantity}

@@ -1,14 +1,10 @@
-const ComponentTwo = ({count, onClickHandler}) => {
-const handleClick = () => onClickHandler();
+const ComponentTwo = ({ onClickHandler }) => {
+  const handleClick = () => onClickHandler();
 
-  return ( 
+  return (
     <div>
       <button onClick={handleClick}>Decrement</button>
     </div>
-
-
-
-
   );
 };
 

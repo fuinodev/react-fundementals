@@ -1,14 +1,13 @@
-const ComponentOne = ({count, onClickHandler}) => {
-    const handleClick = () => onClickHandler();
+const ComponentOne = ({ count, onClickHandler }) => {
+  const handleClick = () => onClickHandler();
 
   return (
- <div>
-    <p>{count}</p>
+    <div>
+      <p>{count}</p>
 
-    <button onClick={handleClick}>Increment</button>
- </div>
-
-);
+      <button onClick={handleClick}>Increment</button>
+    </div>
+  );
 };
 
 export default ComponentOne;
