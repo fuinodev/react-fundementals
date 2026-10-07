@@ -1,11 +1,11 @@
-import User from "./components/User";
+import BasicEffect from "./components/BasicEffect";
 
 const App = () => {
   return (
     <div>
-      <User />
+      <BasicEffect />
     </div>
   )
-}
+};
 
-export default App
+export default App;
