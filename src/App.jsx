@@ -1,9 +1,11 @@
-import SimpleCounter from "./components/SimpleCounter"
+import SimpleCounter from "./components/useState/SimpleCounter";
+import LiveNameInput from "./components/useState/LiveNameInput";
 
 const App = () => {
   return (
     <div>
       <SimpleCounter />
+      <LiveNameInput />
     </div>
   );
 };
