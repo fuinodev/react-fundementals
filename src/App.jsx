@@ -1,11 +1,11 @@
-import FetchDataEffect from "./components/FetchDataEffect";
+import SimpleCounter from "./components/SimpleCounter"
 
 const App = () => {
   return (
     <div>
-       <FetchDataEffect />
+      <SimpleCounter />
     </div>
-  )
+  );
 };
 
 export default App;
