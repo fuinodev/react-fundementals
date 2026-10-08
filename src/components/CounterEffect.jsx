@@ -5,7 +5,7 @@ const CounterEffect = () => {
 
     
     useEffect(() => {
-          document.title = 'Count: ${count}';
+          document.title = `Count: ${count}`;
 }, [count]);
 
   return (
