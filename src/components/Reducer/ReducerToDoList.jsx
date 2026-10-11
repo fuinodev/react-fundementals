@@ -60,7 +60,13 @@ const ReducerTodoList = () => {
       <ul>
         {tasks.map((task) => (
           <li key={task.id}>
-            <span>{task.text}</span>
+          <span
+  style={{
+    textDecoration: task.completed ? "line-through" : "none",
+  }}
+>
+  {task.text}
+</span>
 
  <button onClick={() => dispatch({ type: "toggle", id: task.id})}
   >
