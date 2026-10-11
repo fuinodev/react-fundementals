@@ -1,3 +1,4 @@
+import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 
 const PasswordVisibility = () => {
@@ -21,8 +22,13 @@ const PasswordVisibility = () => {
         onChange={(event) => setPassword(event.target.value)}
       />
 
-      <button onClick={togglePassword}>
-        {showPassword ? "Hide" : "Show"}
+      <button 
+      type="button"
+      onClick={togglePassword}
+      aria-label={showPassword ? "Hide" : "Show"}
+      >
+      
+        {showPassword ? <EyeOff size={20}/> : <Eye size={20}/>}
       </button>
     </div>
   );

@@ -1,13 +1,13 @@
-import SimpleCounter from "./components/useState/SimpleCounter";
-import LiveNameInput from "./components/useState/LiveNameInput";
-import PasswordVisibility from "./components/useState/PasswordVisibility";
+import SimpleCounter from "./components/SimpleCounter";
+import LiveNameInput from "./components/LiveNameInput";
+import PasswordVisibility from "./components/PasswordVisibility";
 
 const App = () => {
   return (
     <div>
+      <PasswordVisibility />
       <SimpleCounter />
       <LiveNameInput />
-      <PasswordVisibility />
     </div>
   );
 };
