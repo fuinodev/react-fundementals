@@ -4,7 +4,7 @@ const LiveNameInput = () => {
   const [name, setName] = useState("");
 
   const handleChange = (event) => {
-    console.log(event.target.value);
+    setName(event.target.value);
   };
 
   return (
@@ -18,7 +18,15 @@ const LiveNameInput = () => {
         onChange={handleChange}
       />
 
-      <h2>Hello, {name}!</h2>
+      <h2>
+        {name.trim() ? (
+            <h2>Hello, {name.trim()}!</h2>
+                    ) : (
+           <h9>Please enter your name</h9>
+         )}
+      </h2>
+
+
     </div>
   );
 };
