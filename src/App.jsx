@@ -1,15 +1,8 @@
-import SimpleCounter from "./components/SimpleCounter";
-import LiveNameInput from "./components/LiveNameInput";
-import PasswordVisibility from "./components/PasswordVisibility";
-import ReducerCounter from "./components/useReducer/ReducerCounter";
-
+import ReducerTodoList from "./components/Reducer/ReducerToDoList";
 const App = () => {
   return (
     <div>
-      <PasswordVisibility />
-      <SimpleCounter />
-      <LiveNameInput />
-      <ReducerCounter />
+      <ReducerTodoList />
     </div>
   );
 };

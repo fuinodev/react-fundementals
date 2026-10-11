@@ -9,8 +9,8 @@ const reducer = (state, action) => {
       return state - 1;
 
     case "reset":
-      return 0;
-
+      return state.filter((task) => task.id !== action.id);
+      
     default:
       return state;
   }
