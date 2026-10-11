@@ -1,6 +1,6 @@
 import { useReducer, useState } from "react";
 import { Plus, Check, Undo2, Trash2 } from "lucide-react";
-import "./ReducerTodolist.css";
+import "./style/ReducerToDolist.css"
 
 // Reducer function
 const reducer = (state, action) => {
