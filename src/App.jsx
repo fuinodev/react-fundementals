@@ -1,8 +1,8 @@
-import ReducerTodoList from "./components/Reducer/ReducerToDoList";
+import ShoppingCart from "./components/Reducer/ShoppingCart";
 const App = () => {
   return (
     <div>
-      <ReducerTodoList />
+      <ShoppingCart />
     </div>
   );
 };
