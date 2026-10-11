@@ -1,6 +1,7 @@
 import SimpleCounter from "./components/SimpleCounter";
 import LiveNameInput from "./components/LiveNameInput";
 import PasswordVisibility from "./components/PasswordVisibility";
+import ReducerCounter from "./components/useReducer/ReducerCounter";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <PasswordVisibility />
       <SimpleCounter />
       <LiveNameInput />
+      <ReducerCounter />
     </div>
   );
 };
